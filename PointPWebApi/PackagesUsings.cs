@@ -1,1 +1,11 @@
 global using Microsoft.OpenApi.Models;
+global using Ardalis.ApiEndpoints;
+global using Microsoft.AspNetCore.Mvc;
+global using Swashbuckle.AspNetCore.Annotations;
+global using System.Reflection;
+global using Microsoft.OpenApi.Any;
+global using Swashbuckle.AspNetCore.SwaggerGen;
+global using FluentValidation;
+global using FluentValidation.AspNetCore;
+global using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
+global using System.ComponentModel.DataAnnotations;

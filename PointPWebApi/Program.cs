@@ -1,8 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
-var services = builder.Services;
-services.AddControllers();
-services.AddEndpointsApiExplorer();
-services.AddSwaggerSetup();
+builder.Services
+    .AddControllers()
+    .AddFluentValidationWithSwaggerSetup()
+    .AddEndpointsApiExplorer()
+    .AddSwaggerSetup();
 
 var app = builder.Build();
 app.UseSwaggerSetup();

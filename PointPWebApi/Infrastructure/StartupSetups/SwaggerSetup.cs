@@ -26,6 +26,7 @@ public static class SwaggerSetup
                     }
                 });
             setupAction.EnableAnnotations();
+            setupAction.SchemaFilter<SwaggerSchemaExampleFilter>();
         });
     
     public static IApplicationBuilder UseSwaggerSetup(this IApplicationBuilder app)
