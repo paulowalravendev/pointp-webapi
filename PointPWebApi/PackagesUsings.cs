@@ -9,3 +9,6 @@ global using FluentValidation;
 global using FluentValidation.AspNetCore;
 global using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
 global using System.ComponentModel.DataAnnotations;
+global using MediatR;
+global using OperationResult;
+global using Microsoft.EntityFrameworkCore;
